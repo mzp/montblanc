@@ -55,13 +55,13 @@ public struct Activity {
             buf.withMemoryRebound(to: Int8.self) { buffer in
                 let str = buffer.baseAddress!
                 let flags = os_activity_flag_t(rawValue: options.rawValue)
-                    return _os_activity_create(dso, str, OS_ACTIVITY_CURRENT, flags)
+                return _os_activity_create(dso, str, OS_ACTIVITY_CURRENT, flags)
             }
         }
     }
 
     private func active(execute body: @convention(block) () -> Void) {
-            _os_activity_apply(opaque, body)
+        _os_activity_apply(opaque, body)
     }
 
     /// Executes a function body within the context of the activity.
@@ -94,7 +94,7 @@ public struct Activity {
 
         /// Pops activity state to `self`.
         public mutating func leave() {
-                _os_activity_scope_leave(&state)
+            _os_activity_scope_leave(&state)
         }
     }
 
@@ -108,7 +108,7 @@ public struct Activity {
     ///
     public func enter() -> Scope {
         var scope = Scope()
-            _os_activity_scope_enter(opaque, &scope.state)
+        _os_activity_scope_enter(opaque, &scope.state)
         return scope
     }
 

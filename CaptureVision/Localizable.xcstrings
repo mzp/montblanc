@@ -1,6 +1,19 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "Body Capture" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "モーションキャプチャ"
+          }
+        }
+      }
+    },
+    "Circle" : {
+
+    },
     "Not supported in this device" : {
       "localizations" : {
         "en" : {
@@ -16,6 +29,9 @@
           }
         }
       }
+    },
+    "Rectangle" : {
+
     }
   },
   "version" : "1.0"

@@ -18,7 +18,7 @@ struct CaptureVisionApp: App {
 
 struct RootView: View {
     var body: some View {
-        BodyCaptureView()
+        RootNavigation()
     }
 }
 

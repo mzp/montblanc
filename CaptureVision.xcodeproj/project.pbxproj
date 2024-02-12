@@ -15,6 +15,7 @@
 		1327608E2B79EF29005DF9E8 /* ARKitBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327608D2B79EF29005DF9E8 /* ARKitBridge.swift */; };
 		132760902B79F045005DF9E8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1327608F2B79F045005DF9E8 /* Localizable.xcstrings */; };
 		132760952B79F278005DF9E8 /* BuildSettings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 132760942B79F278005DF9E8 /* BuildSettings.xcconfig */; };
+		13BEB3452B79FDE30083BDD0 /* RootNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BEB3442B79FDE30083BDD0 /* RootNavigation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		1327608D2B79EF29005DF9E8 /* ARKitBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitBridge.swift; sourceTree = "<group>"; };
 		1327608F2B79F045005DF9E8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		132760942B79F278005DF9E8 /* BuildSettings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BuildSettings.xcconfig; sourceTree = "<group>"; };
+		13BEB3442B79FDE30083BDD0 /* RootNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				1327608B2B79EAC6005DF9E8 /* Activity.swift */,
 				132760782B79E1EC005DF9E8 /* App.swift */,
+				13BEB3442B79FDE30083BDD0 /* RootNavigation.swift */,
 				132760882B79E6EA005DF9E8 /* BodyCapture */,
 				1327607C2B79E1ED005DF9E8 /* Assets.xcassets */,
 				1327608F2B79F045005DF9E8 /* Localizable.xcstrings */,
@@ -160,6 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13BEB3452B79FDE30083BDD0 /* RootNavigation.swift in Sources */,
 				1327608E2B79EF29005DF9E8 /* ARKitBridge.swift in Sources */,
 				1327608C2B79EAC6005DF9E8 /* Activity.swift in Sources */,
 				132760792B79E1EC005DF9E8 /* App.swift in Sources */,
