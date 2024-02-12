@@ -1,5 +1,5 @@
 //
-//  CaptureVisionApp.swift
+//  App.swift
 //  CaptureVision
 //
 //  Created by mzp on 2/11/24.
@@ -11,7 +11,17 @@ import SwiftUI
 struct CaptureVisionApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
     }
+}
+
+struct RootView: View {
+    var body: some View {
+        BodyCaptureView()
+    }
+}
+
+#Preview {
+    RootView()
 }
