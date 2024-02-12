@@ -14,6 +14,7 @@
 		1327608C2B79EAC6005DF9E8 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327608B2B79EAC6005DF9E8 /* Activity.swift */; };
 		1327608E2B79EF29005DF9E8 /* ARKitBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327608D2B79EF29005DF9E8 /* ARKitBridge.swift */; };
 		132760902B79F045005DF9E8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1327608F2B79F045005DF9E8 /* Localizable.xcstrings */; };
+		132760952B79F278005DF9E8 /* BuildSettings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 132760942B79F278005DF9E8 /* BuildSettings.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		1327608B2B79EAC6005DF9E8 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		1327608D2B79EF29005DF9E8 /* ARKitBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitBridge.swift; sourceTree = "<group>"; };
 		1327608F2B79F045005DF9E8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		132760942B79F278005DF9E8 /* BuildSettings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BuildSettings.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +43,7 @@
 		1327606C2B79E1EC005DF9E8 = {
 			isa = PBXGroup;
 			children = (
+				132760942B79F278005DF9E8 /* BuildSettings.xcconfig */,
 				132760772B79E1EC005DF9E8 /* CaptureVision */,
 				132760762B79E1EC005DF9E8 /* Products */,
 			);
@@ -145,6 +148,7 @@
 			files = (
 				132760802B79E1ED005DF9E8 /* Preview Assets.xcassets in Resources */,
 				1327607D2B79E1ED005DF9E8 /* Assets.xcassets in Resources */,
+				132760952B79F278005DF9E8 /* BuildSettings.xcconfig in Resources */,
 				132760902B79F045005DF9E8 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -168,6 +172,7 @@
 /* Begin XCBuildConfiguration section */
 		132760812B79E1ED005DF9E8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132760942B79F278005DF9E8 /* BuildSettings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
@@ -231,6 +236,7 @@
 		};
 		132760822B79E1ED005DF9E8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 132760942B79F278005DF9E8 /* BuildSettings.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
