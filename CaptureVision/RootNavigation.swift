@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PageItem: Identifiable, Hashable, Equatable {
     var id: String
-    var title: LocalizedStringKey
+    var title: String
     var content: () -> any View
 
     var anyView: AnyView {
@@ -34,15 +34,31 @@ struct RootNavigation: View {
         PageItem(id: "body-capture", title: "Body Capture") {
             BodyCaptureView()
         },
+        PageItem(id: "model-render", title: "Render Model") {
+            ModelRenderingView()
+        },
     ]
 
-    @State var path: [String] = []
+    @AppStorage("RootNavigation.path") var path: String = ""
     var body: some View {
-        NavigationStack(path: $path) {
+        NavigationStack(path:
+            Binding(get: {
+                path.components(separatedBy: "/").filter {
+                    !$0.isEmpty
+                }
+            }, set: {
+                path = $0.joined(separator: "/")
+            })
+        ) {
             List(pages) { page in
                 NavigationLink(page.title, value: page.id)
             }.navigationDestination(for: String.self) { id in
-                pages.first(where: { $0.id == id })?.anyView
+                if let page = pages.first(where: { $0.id == id }) {
+                    page.anyView
+                        .navigationTitle(page.title)
+                } else {
+                    EmptyView()
+                }
             }
         }
     }
@@ -51,10 +67,10 @@ struct RootNavigation: View {
 #Preview("Test") {
     RootNavigation(
         pages: [
-            PageItem(id: "a", title: "Circle") {
+            PageItem(id: "a", title: String(localized: "Circle", comment: "#Preview")) {
                 Circle().frame(width: 300, height: 300)
             },
-            PageItem(id: "b", title: "Rectangle") {
+            PageItem(id: "b", title: String(localized: "Rectangle", comment: "#Preview")) {
                 Rectangle().frame(width: 300, height: 300)
             },
         ]

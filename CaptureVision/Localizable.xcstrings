@@ -12,7 +12,15 @@
       }
     },
     "Circle" : {
-
+      "comment" : "#Preview",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "丸"
+          }
+        }
+      }
     },
     "Not supported in this device" : {
       "localizations" : {
@@ -31,7 +39,25 @@
       }
     },
     "Rectangle" : {
-
+      "comment" : "#Preview",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "四角"
+          }
+        }
+      }
+    },
+    "Render Model" : {
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "モデル表示"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
