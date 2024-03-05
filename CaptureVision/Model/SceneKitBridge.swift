@@ -1,14 +1,14 @@
 //
-//  ModelRenderingView.swift
+//  SceneKitBridge.swift
 //  CaptureVision
 //
-//  Created by mzp on 3/3/24.
+//  Created by mzp on 3/4/24.
 //
 
 import SceneKit
 import SwiftUI
 
-struct ModelRenderingView: View {
+struct SceneKitView: View {
     @State var scene: SCNScene?
     var body: some View {
         SceneView(scene: scene).onAppear {
@@ -34,5 +34,5 @@ struct ModelRenderingView: View {
 }
 
 #Preview {
-    ModelRenderingView()
+    SceneKitView()
 }

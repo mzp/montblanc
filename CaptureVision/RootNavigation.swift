@@ -7,35 +7,13 @@
 
 import SwiftUI
 
-struct PageItem: Identifiable, Hashable, Equatable {
-    var id: String
-    var title: String
-    var content: () -> any View
-
-    var anyView: AnyView {
-        return AnyView(erasing: content())
-    }
-
-    // MARK: Hashable
-
-    func hash(into hasher: inout Hasher) {
-        id.hash(into: &hasher)
-    }
-
-    // MARK: Equatable
-
-    static func == (lhs: PageItem, rhs: PageItem) -> Bool {
-        lhs.id == rhs.id
-    }
-}
-
 struct RootNavigation: View {
     var pages: [PageItem] = [
         PageItem(id: "body-capture", title: "Body Capture") {
             BodyCaptureView()
         },
         PageItem(id: "model-render", title: "Render Model") {
-            ModelRenderingView()
+            ModelRenderingNavigation()
         },
     ]
 
@@ -65,16 +43,7 @@ struct RootNavigation: View {
 }
 
 #Preview("Test") {
-    RootNavigation(
-        pages: [
-            PageItem(id: "a", title: String(localized: "Circle", comment: "#Preview")) {
-                Circle().frame(width: 300, height: 300)
-            },
-            PageItem(id: "b", title: String(localized: "Rectangle", comment: "#Preview")) {
-                Rectangle().frame(width: 300, height: 300)
-            },
-        ]
-    )
+    RootNavigation(pages: PageItem.previews)
 }
 
 #Preview("Main") {

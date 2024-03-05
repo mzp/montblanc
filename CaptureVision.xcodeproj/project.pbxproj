@@ -15,8 +15,10 @@
 		1327608E2B79EF29005DF9E8 /* ARKitBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1327608D2B79EF29005DF9E8 /* ARKitBridge.swift */; };
 		132760902B79F045005DF9E8 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 1327608F2B79F045005DF9E8 /* Localizable.xcstrings */; };
 		132760952B79F278005DF9E8 /* BuildSettings.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 132760942B79F278005DF9E8 /* BuildSettings.xcconfig */; };
-		135205E72B95AE82008FC9CE /* ModelRenderingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135205E62B95AE82008FC9CE /* ModelRenderingView.swift */; };
+		135205E72B95AE82008FC9CE /* ModelNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135205E62B95AE82008FC9CE /* ModelNavigation.swift */; };
 		135205E92B95B0E6008FC9CE /* monkey.scn in Resources */ = {isa = PBXBuildFile; fileRef = 135205E82B95B0E6008FC9CE /* monkey.scn */; };
+		135205EB2B96B5B9008FC9CE /* SceneKitBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135205EA2B96B5B9008FC9CE /* SceneKitBridge.swift */; };
+		135205EE2B96B9EC008FC9CE /* PageItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 135205ED2B96B9EC008FC9CE /* PageItem.swift */; };
 		13BEB3452B79FDE30083BDD0 /* RootNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13BEB3442B79FDE30083BDD0 /* RootNavigation.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,8 +32,10 @@
 		1327608D2B79EF29005DF9E8 /* ARKitBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARKitBridge.swift; sourceTree = "<group>"; };
 		1327608F2B79F045005DF9E8 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		132760942B79F278005DF9E8 /* BuildSettings.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = BuildSettings.xcconfig; sourceTree = "<group>"; };
-		135205E62B95AE82008FC9CE /* ModelRenderingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelRenderingView.swift; sourceTree = "<group>"; };
+		135205E62B95AE82008FC9CE /* ModelNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelNavigation.swift; sourceTree = "<group>"; };
 		135205E82B95B0E6008FC9CE /* monkey.scn */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = monkey.scn; sourceTree = "<group>"; };
+		135205EA2B96B5B9008FC9CE /* SceneKitBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitBridge.swift; sourceTree = "<group>"; };
+		135205ED2B96B9EC008FC9CE /* PageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageItem.swift; sourceTree = "<group>"; };
 		13BEB3442B79FDE30083BDD0 /* RootNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigation.swift; sourceTree = "<group>"; };
 		13BEB3472B7A0CDD0083BDD0 /* CaptureVision.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CaptureVision.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -71,8 +75,9 @@
 				1327608B2B79EAC6005DF9E8 /* Activity.swift */,
 				132760782B79E1EC005DF9E8 /* App.swift */,
 				13BEB3442B79FDE30083BDD0 /* RootNavigation.swift */,
+				135205EC2B96B9DF008FC9CE /* Entity */,
 				132760882B79E6EA005DF9E8 /* BodyCapture */,
-				135205E52B95AE54008FC9CE /* Rendering */,
+				135205E52B95AE54008FC9CE /* Model */,
 				1327607C2B79E1ED005DF9E8 /* Assets.xcassets */,
 				135205E82B95B0E6008FC9CE /* monkey.scn */,
 				1327608F2B79F045005DF9E8 /* Localizable.xcstrings */,
@@ -98,12 +103,21 @@
 			path = BodyCapture;
 			sourceTree = "<group>";
 		};
-		135205E52B95AE54008FC9CE /* Rendering */ = {
+		135205E52B95AE54008FC9CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				135205E62B95AE82008FC9CE /* ModelRenderingView.swift */,
+				135205E62B95AE82008FC9CE /* ModelNavigation.swift */,
+				135205EA2B96B5B9008FC9CE /* SceneKitBridge.swift */,
 			);
-			path = Rendering;
+			path = Model;
+			sourceTree = "<group>";
+		};
+		135205EC2B96B9DF008FC9CE /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				135205ED2B96B9EC008FC9CE /* PageItem.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,8 +196,10 @@
 			files = (
 				13BEB3452B79FDE30083BDD0 /* RootNavigation.swift in Sources */,
 				1327608E2B79EF29005DF9E8 /* ARKitBridge.swift in Sources */,
+				135205EB2B96B5B9008FC9CE /* SceneKitBridge.swift in Sources */,
 				1327608C2B79EAC6005DF9E8 /* Activity.swift in Sources */,
-				135205E72B95AE82008FC9CE /* ModelRenderingView.swift in Sources */,
+				135205E72B95AE82008FC9CE /* ModelNavigation.swift in Sources */,
+				135205EE2B96B9EC008FC9CE /* PageItem.swift in Sources */,
 				132760792B79E1EC005DF9E8 /* App.swift in Sources */,
 				1327608A2B79E6FC005DF9E8 /* BodyCaptureView.swift in Sources */,
 			);
