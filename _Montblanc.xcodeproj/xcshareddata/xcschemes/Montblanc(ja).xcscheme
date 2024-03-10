@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "132760742B79E1EC005DF9E8"
-               BuildableName = "CaptureVision.app"
-               BlueprintName = "CaptureVision"
-               ReferencedContainer = "container:CaptureVision.xcodeproj">
+               BuildableName = "Montblanc.app"
+               BlueprintName = "Montblanc"
+               ReferencedContainer = "container:_Montblanc.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,9 +46,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "132760742B79E1EC005DF9E8"
-            BuildableName = "CaptureVision.app"
-            BlueprintName = "CaptureVision"
-            ReferencedContainer = "container:CaptureVision.xcodeproj">
+            BuildableName = "Montblanc.app"
+            BlueprintName = "Montblanc"
+            ReferencedContainer = "container:_Montblanc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -63,9 +63,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "132760742B79E1EC005DF9E8"
-            BuildableName = "CaptureVision.app"
-            BlueprintName = "CaptureVision"
-            ReferencedContainer = "container:CaptureVision.xcodeproj">
+            BuildableName = "Montblanc.app"
+            BlueprintName = "Montblanc"
+            ReferencedContainer = "container:_Montblanc.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

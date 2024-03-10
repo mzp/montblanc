@@ -23,7 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		132760752B79E1EC005DF9E8 /* CaptureVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaptureVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		132760752B79E1EC005DF9E8 /* Montblanc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Montblanc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		132760782B79E1EC005DF9E8 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		1327607C2B79E1ED005DF9E8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1327607F2B79E1ED005DF9E8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -37,7 +37,7 @@
 		135205EA2B96B5B9008FC9CE /* SceneKitBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneKitBridge.swift; sourceTree = "<group>"; };
 		135205ED2B96B9EC008FC9CE /* PageItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageItem.swift; sourceTree = "<group>"; };
 		13BEB3442B79FDE30083BDD0 /* RootNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigation.swift; sourceTree = "<group>"; };
-		13BEB3472B7A0CDD0083BDD0 /* CaptureVision.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CaptureVision.entitlements; sourceTree = "<group>"; };
+		13BEB3472B7A0CDD0083BDD0 /* Montblanc.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Montblanc.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,8 @@
 			isa = PBXGroup;
 			children = (
 				132760942B79F278005DF9E8 /* BuildSettings.xcconfig */,
-				132760772B79E1EC005DF9E8 /* CaptureVision */,
+				1327607E2B79E1ED005DF9E8 /* Preview Content */,
+				132760772B79E1EC005DF9E8 /* Sources */,
 				132760762B79E1EC005DF9E8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,15 +64,15 @@
 		132760762B79E1EC005DF9E8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				132760752B79E1EC005DF9E8 /* CaptureVision.app */,
+				132760752B79E1EC005DF9E8 /* Montblanc.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		132760772B79E1EC005DF9E8 /* CaptureVision */ = {
+		132760772B79E1EC005DF9E8 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				13BEB3472B7A0CDD0083BDD0 /* CaptureVision.entitlements */,
+				13BEB3472B7A0CDD0083BDD0 /* Montblanc.entitlements */,
 				1327608B2B79EAC6005DF9E8 /* Activity.swift */,
 				132760782B79E1EC005DF9E8 /* App.swift */,
 				13BEB3442B79FDE30083BDD0 /* RootNavigation.swift */,
@@ -81,9 +82,8 @@
 				1327607C2B79E1ED005DF9E8 /* Assets.xcassets */,
 				135205E82B95B0E6008FC9CE /* monkey.scn */,
 				1327608F2B79F045005DF9E8 /* Localizable.xcstrings */,
-				1327607E2B79E1ED005DF9E8 /* Preview Content */,
 			);
-			path = CaptureVision;
+			path = Sources;
 			sourceTree = "<group>";
 		};
 		1327607E2B79E1ED005DF9E8 /* Preview Content */ = {
@@ -123,9 +123,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		132760742B79E1EC005DF9E8 /* CaptureVision */ = {
+		132760742B79E1EC005DF9E8 /* Montblanc */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 132760832B79E1ED005DF9E8 /* Build configuration list for PBXNativeTarget "CaptureVision" */;
+			buildConfigurationList = 132760832B79E1ED005DF9E8 /* Build configuration list for PBXNativeTarget "Montblanc" */;
 			buildPhases = (
 				132760712B79E1EC005DF9E8 /* Sources */,
 				132760722B79E1EC005DF9E8 /* Frameworks */,
@@ -135,9 +135,9 @@
 			);
 			dependencies = (
 			);
-			name = CaptureVision;
+			name = Montblanc;
 			productName = CaptureVision;
-			productReference = 132760752B79E1EC005DF9E8 /* CaptureVision.app */;
+			productReference = 132760752B79E1EC005DF9E8 /* Montblanc.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -155,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 132760702B79E1EC005DF9E8 /* Build configuration list for PBXProject "CaptureVision" */;
+			buildConfigurationList = 132760702B79E1EC005DF9E8 /* Build configuration list for PBXProject "_Montblanc" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -169,7 +169,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				132760742B79E1EC005DF9E8 /* CaptureVision */,
+				132760742B79E1EC005DF9E8 /* Montblanc */,
 			);
 		};
 /* End PBXProject section */
@@ -334,10 +334,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CaptureVision/CaptureVision.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CaptureVision/Preview Content\"";
 				DEVELOPMENT_TEAM = VG2YYSKSHY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -366,10 +364,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = CaptureVision/CaptureVision.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CaptureVision/Preview Content\"";
 				DEVELOPMENT_TEAM = VG2YYSKSHY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -396,7 +392,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		132760702B79E1EC005DF9E8 /* Build configuration list for PBXProject "CaptureVision" */ = {
+		132760702B79E1EC005DF9E8 /* Build configuration list for PBXProject "_Montblanc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				132760812B79E1ED005DF9E8 /* Debug */,
@@ -405,7 +401,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		132760832B79E1ED005DF9E8 /* Build configuration list for PBXNativeTarget "CaptureVision" */ = {
+		132760832B79E1ED005DF9E8 /* Build configuration list for PBXNativeTarget "Montblanc" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				132760842B79E1ED005DF9E8 /* Debug */,
