@@ -15,3 +15,5 @@ SWIFT_VERSION = 5.0
 CODE_SIGN_ENTITLEMENTS = Sources/Montblanc.entitlements
 
 DEVELOPMENT_ASSET_PATHS = "./Preview Content"
+
+INFOPLIST_KEY_NSCameraUsageDescription = "This application will use the camera for Augmented Reality."

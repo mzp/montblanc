@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import os
 
 struct RootNavigation: View {
     var pages: [PageItem] = [
@@ -15,6 +16,9 @@ struct RootNavigation: View {
         PageItem(id: "model-render", title: "Render Model") {
             ModelRenderingNavigation()
         },
+        PageItem(id: "debug", title: "Debug", content: {
+            DebugView()
+        })
     ]
 
     @AppStorage("RootNavigation.path") var path: String = ""
